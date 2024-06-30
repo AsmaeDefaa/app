@@ -1,0 +1,168 @@
+
+<!-- <app-side-of-dashboard [getData]="obj"></app-side-of-dashboard> -->
+
+<div class="sidebar close">
+  <div class="logo-details">
+    
+    <i class='bx bx-menu'></i>
+    
+    
+  </div>
+
+
+
+  <ul class="nav-links">
+    <!-- <li>
+      <a routerLink="/dash/projects/5">
+        <i class='bx bx-grid-alt' ></i>
+        <span class="link_name">Info general</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Chart</a></li>
+      </ul>
+    </li> -->
+    <!-- <li>
+
+      <div class="iocn-link">
+        <a routerLink="gestion-activite">
+      
+          <i class="bi bi-clipboard2-data-fill"></i>
+          <span class="link_name">Gestion d'activités</span>
+        </a>
+        <i class='bx bxs-chevron-down arrow' ></i>
+      </div>
+      <ul class="sub-menu" >
+        <li><a class="link_name" routerLink="gestion-activite"><span class="bi bi-clipboard2-data-fill mx-2"></span>Gestion d'activités</a></li>
+        <li><a routerLink="gestion-activite/tasks"><span class="bi bi-hourglass-split mx-2"></span>Gestion des tâches </a></li>
+        <li><a routerLink="gestion-activite/rh"><span class="bi bi-people-fill mx-2"></span>Gestion des RH</a></li>
+        <li><a routerLink="gestion-activite/financiere"><span class="bi bi-cash-coin mx-2"></span> Gestion financière</a></li>
+        <li><a routerLink="gestion-activite/financiere"><span class="bi bi-box-seam-fill mx-2"></span> Gestion des livrables</a></li>
+        <li><a routerLink="gestion-activite/financiere"><span class="bi bi-repeat mx-2"></span> Gestion suivi et pilotage</a></li>
+        <li><a routerLink="gestion-activite/risques"><span class="bi bi-browser-safari mx-2"></span>Gestion des risques</a></li>
+      </ul>
+    </li> -->
+
+
+    <!-- <li>
+      <div class="iocn-link">
+        <a routerLink="gestion-activite">
+      
+          <i class="bi bi-file-earmark-check-fill"></i>
+          <span class="link_name">Bilan et rapports</span>
+        </a>
+        <i class='bx bxs-chevron-down arrow' ></i>
+      </div>
+      <ul class="sub-menu" >
+
+        <li><a class="link_name" routerLink="gestion-activite"><span class="bi bi-clipboard2-data-fill mx-2">Bilan et rapports</span></a></li>
+        <li><a routerLink="gestion-activite/tasks"><span class="bi bi-hourglass-split mx-2"> Réalisation et livrables</span></a></li>
+        <li><a routerLink="gestion-activite/rh"><span class="bi bi-file-earmark-medical mx-2"></span>Rapports</a></li>
+        <li><a routerLink="gestion-activite/financiere"><span class="bi bi-journal-bookmark-fill mx-2"></span>Bilan</a></li>
+
+      </ul>
+    </li> -->
+
+
+
+
+    <!-- <li>
+      <div class="iocn-link">
+        <a routerLink="/dash/projects">
+          <i class='bx bx-book-alt' ></i>
+          <span class="link_name">Administration</span>
+        </a>
+        <i class='bx bxs-chevron-down arrow' ></i>
+      </div>
+      <ul class="sub-menu">
+        <li><a class="link_name" href="#">Administration
+        </a></li>
+
+        <li><a href="#"><span class="bi bi-people mx-2"></span> Gestion des compte</a></li>
+
+      </ul>
+    </li>-->
+    <li> 
+      <a href="#">
+        <i class='bx bx-pie-chart-alt-2' ></i>
+        <span class="link_name">Analytics</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Analytics</a></li>
+      </ul>
+    </li>
+    <li>
+      <a routerLink="/dash">
+        <i class='bx bx-line-chart' ></i>
+        <span class="link_name">Chart</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" routerLink="/dash">Chart</a></li>
+      </ul>
+    </li>
+   
+
+<!-- ==================================== -->
+  
+<!-- ==================================== -->
+
+
+    <li>
+      <a routerLink="/list">
+        <i class='bx bx-history'></i>
+        <span class="link_name">Scraping Articles</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" routerLink="/list">History</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-cog' ></i>
+        <span class="link_name">Setting</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Setting</a></li>
+      </ul>
+    </li>
+    <li>
+  
+</li>
+</ul>
+</div>
+
+
+
+
+<section class="home-section home-section-container" style="height: 100%;" >
+  <div class="home-content">
+
+
+
+
+
+    <div class="scrollable-content" style="width: 100%;">
+      
+
+
+
+
+<div class="container-fluid" style="overflow: auto;">
+
+
+    <!-- /////////////////Side bar content/////////////////// -->
+       
+
+                <router-outlet></router-outlet>
+
+      <!-- /////////////////Side bar content/////////////////// -->
+
+ <div style="background-color: rgb(255, 255, 255);width: 100%;height: 100px;"></div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+

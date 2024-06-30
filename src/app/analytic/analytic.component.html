@@ -1,0 +1,82 @@
+
+
+
+
+
+
+
+
+<div class="container">
+
+     <div class="row">
+        <div class="col-md-12">
+            <div class="container px-4 py-5" id="custom-cards">
+                <h2 class="pb-2 border-bottom">Dashboard</h2>
+            
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                  <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+                      <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Articles Positifs  <small style="color: rgb(72, 245, 138);">{{positif}}</small></h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                          <li class="me-auto">
+                          </li>
+                          <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                          </li>
+                          <li class="d-flex align-items-center">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+                      <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Articles négatifs <small style="color: rgb(244, 81, 81);">{{negatif}}</small></h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                          <li class="me-auto">
+                          </li>
+                          <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                          </li>
+                          <li class="d-flex align-items-center">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+                      <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">articles Neutres  <small style="color: rgb(228, 253, 86);">{{neutre}}</small></h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                          <li class="me-auto">
+                          </li>
+                          <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                          </li>
+                          <li class="d-flex align-items-center">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+           <div class="col-md-6">
+            <app-gradient-donut></app-gradient-donut>
+           </div>
+           <div class="col-md-6">
+            <app-pie></app-pie>
+           </div>
+           <div class="col-md-12">
+            <app-bar-grouped></app-bar-grouped>
+           </div>
+     </div>
+</div>
+
+

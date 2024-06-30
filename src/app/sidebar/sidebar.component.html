@@ -1,0 +1,67 @@
+<!-- navbar -->
+<nav class="navbar">
+  <div class="logo_item">
+    <i class="bx bx-menu" (click)="toggleSidebar()"></i>
+    <img src="assets/images/logo.png" alt="CodingNepal Logo" />
+  </div>
+
+  <div class="search_bar">
+    <input type="text" placeholder="Search" />
+  </div>
+
+  <div class="navbar_content">
+    <i class="bi bi-grid"></i>
+    <i class='bx' [ngClass]="{'bx-moon': isDarkMode, 'bx-sun': !isDarkMode}" (click)="toggleDarkMode()"></i>
+    <i class='bx bx-bell'></i>
+    <img src="assets/images/profile.jpg" alt="" class="profile" />
+  </div>
+</nav>
+
+<!-- sidebar -->
+<nav class="sidebar" [class.close]="isSidebarClosed" [class.hoverable]="isSidebarHoverable"
+     (mouseenter)="onSidebarMouseEnter()" (mouseleave)="onSidebarMouseLeave()">
+  <div class="menu_content">
+    <ul class="menu_items">
+      <div class="menu_title menu_dashboard"></div>
+      <li class="item" *ngFor="let item of menuItems; let i = index">
+        <div class="nav_link submenu_item" (click)="toggleSubmenu(i)">
+          <span class="navlink_icon">
+            <i class="bx" [ngClass]="item.icon"></i>
+          </span>
+          <span class="navlink">{{item.title}}</span>
+          <i class="bx bx-chevron-right arrow-left"></i>
+        </div>
+
+        <ul class="menu_items submenu" [class.show_submenu]="item.showSubmenu">
+          <a href="#" class="nav_link sublink" *ngFor="let sublink of item.sublinks">{{sublink}}</a>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="menu_items">
+      <div class="menu_title menu_editor"></div>
+      <li class="item" *ngFor="let link of otherLinks">
+        <a href="#" class="nav_link">
+          <span class="navlink_icon">
+            <i class="{{link.icon}}"></i>
+          </span>
+          <span class="navlink">{{link.title}}</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="bottom_content">
+      <div class="bottom expand_sidebar" (click)="expandSidebar()">
+        <span> Expand</span>
+        <i class='bx bx-log-in'></i>
+      </div>
+      <div class="bottom collapse_sidebar" (click)="collapseSidebar()">
+        <span> Collapse</span>
+        <i class='bx bx-log-out'></i>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- section -->
+<section [ngClass]="{'section-expanded': !isSidebarClosed, 'section-collapsed': isSidebarClosed}" style="height: 150px; background-color: blue;"></section>
